@@ -1,0 +1,32 @@
+<!--pages/device/device.wxml-->
+<scroll-view class="devicelist" scroll-y scroll-with-animation wx:if="{{hasDevice}}">
+  <view wx:for="{{devices}}" wx:key="index" data-id="{{item.id}}" data-ismanager="{{item.ismanager}}" data-type="{{item.type}}" data-name="{{item.name}}" data-location="{{item.location}}" data-isquick="{{item.isquick}}" data-origin="{{item.origin}}" class="deviceitem" hover-class="deviceitem_pressed" bindtap="setDeviceClick">
+    <view class="leftview">
+      <image class="devicetype" src="{{item.type}}"/>
+      <view class="devicename">{{item.name}}</view>
+      <view class="locationbar">
+        <image class="locationicon" src="../../resources/images/location.png"/>
+        <view class="devicelocation">{{item.location}}</view>
+      </view>
+    </view>
+    <image class="deviceedit" src="{{item.origin}}"/>
+    <image class="devicequick" wx:if="{{item.isquick}}" src="../../resources/images/quick.png"/>
+  </view>
+  <view wx:if="{{hasDevice}}" class="bottomspace">
+    <text>无更多设备</text>
+  </view>
+</scroll-view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+    <image class="qrcode" src="{{shareQRCode}}"/>
+    <view class="bottombar">
+      <view class="buttonbar">
+        <view class="close" hover-class="close_pressed" bindtap="close">关闭</view>
+        <view class="save" hover-class="save_pressed" bindtap="save">保存</view>
+      </view>
+    </view>
+</view>
+<view class="addbutton" hover-class="addbutton_pressed" bindtap="setAddButtonClick">
+  <image src="../../resources/images/add.png"/>
+</view>
+<view class="empty" wx:if="{{!hasDevice}}">暂无设备</view>

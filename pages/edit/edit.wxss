@@ -1,0 +1,69 @@
+/* pages/edit/edit.wxss */
+.allinput {
+  height: 400rpx;
+}
+.row {
+  height: 100rpx;
+  padding: 0 32rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 32rpx;
+}
+.row text {
+  color: #000;
+}
+.input {
+  color: #000;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: right;
+  line-height: 100rpx;
+  float: right;
+}
+.tool {
+  margin-top: 20rpx;
+}
+.save {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #fff;
+}
+.save_pressed {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #eee;
+}
+.destroy {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  color: #f00;
+  background: #fff;
+}
+.destroy_pressed {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  color: #f00;
+  background: #eee;
+}

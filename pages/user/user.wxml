@@ -1,0 +1,31 @@
+<!--pages/user/user.wxml-->
+<view class="{{allinputStyle}}">
+  <view class="row">
+    <text>用户名</text>
+    <input class="inputnormal" disabled="disabled" type="text" value="{{username}}"></input>
+  </view>
+  <view class="row">
+    <text>手机号码</text>
+    <input auto-focus class="{{inputStyle}}" bindinput="phoneInput" placeholder="未修改" disabled="{{modify}}" type="text" maxlength="11" value="{{phone}}"></input>
+  </view>
+  <view class="row">
+    <text>邮箱号码</text>
+    <input class="{{inputStyle}}" bindinput="emailInput" placeholder="未修改" disabled="{{modify}}" type="text" maxlength="20" value="{{email}}"></input>
+  </view>
+  <view class="row">
+    <text>昵称</text>
+    <input class="{{inputStyle}}" bindinput="nicknameInput" placeholder="未修改" disabled="{{modify}}" type="text" maxlength="12" value="{{nickname}}"></input>
+  </view>
+  <view class="row">
+    <text>{{passwordText}}</text>
+    <input class="{{inputStyle}}" bindinput="oldpasswordInput" placeholder="未修改" disabled="{{modify}}" type="{{passwordType}}" maxlength="12" value="{{oldpassword}}"></input>
+  </view>
+  <view class="row" hidden="{{!ismodify}}">
+    <text>新密码</text>
+    <input class="{{inputStyle}}" bindinput="newpasswordInput" placeholder="未修改" disabled="{{modify}}" type="{{passwordType}}" maxlength="12" value="{{newpassword}}"></input>
+  </view>
+  <view class="tool">
+    <view class="modify" hover-class="modify_pressed" bindtap="switchToModify">{{modifyText}}</view>
+    <view class="logout" hover-class="logout_pressed" bindtap="setLogoutClick">退出登录</view>
+  </view>
+</view>

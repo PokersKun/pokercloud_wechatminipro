@@ -1,0 +1,142 @@
+/**login.wxss**/
+.logo {
+  transition: all 0.5s;
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 48rpx;
+}
+.logo_signup {
+  transition: all 0.5s;
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 48rpx;
+}
+.editpanel {
+  transition: all 0.5s;
+  height: 200rpx;
+}
+.editpanel_signup {
+  transition: all 0.5s;
+  height: 600rpx;
+}
+.editframe {
+  background: #eee;
+  width: 400rpx;
+  height: 80rpx;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
+.btnpanel {
+  width: 440rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+.btnlogin_normal {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 210rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #000;
+  margin-right: 20rpx;
+}
+.btnlogin_pressed {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 210rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #888;
+  margin-right: 20rpx;
+}
+.btnsignup_normal {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 210rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #d92a47;
+}
+.btnsignup_pressed {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 210rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #cf7e8c;
+}
+.btnsignup_signup_normal {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 340rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #d92a47;
+}
+.btnsignup_signup_pressed {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  width: 340rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 80rpx;
+  background: #cf7e8c;
+}
+.btnback_normal {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 48rpx;
+  border-radius: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 72rpx;
+  background: #000;
+  margin-right: 20rpx;
+}
+.btnback_pressed {
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 48rpx;
+  border-radius: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  line-height: 72rpx;
+  background: #888;
+  margin-right: 20rpx;
+}
+.foot {
+  text-align: center;
+  width: 100%;
+  color: #ccc;
+  font-size: 28rpx;
+  margin: 20rpx 0;
+}

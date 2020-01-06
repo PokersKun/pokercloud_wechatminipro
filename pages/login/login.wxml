@@ -1,0 +1,21 @@
+<!--login.wxml-->
+<view class="container">
+  <image class="{{logoStyle}}" src="../../resources/images/logo.png"></image>
+  <view class="{{editPanelStyle}}">
+    <input auto-focus class="editframe" bindinput="usernameInput" hidden="{{isSignup}}" type="text" maxlength="12" value="{{username}}" focus="true" placeholder="用户名"> </input>
+    <input class="editframe" bindinput="passwordInput" hidden="{{isSignup}}" type="password" maxlength="12" value="{{password}}" placeholder="密码"> </input>
+    <input auto-focus class="editframe" bindinput="usernameInput" hidden="{{!isSignup}}" type="text" maxlength="12" value="{{username}}" placeholder="用户名"> </input>
+    <input class="editframe" bindinput="phoneInput" hidden="{{!isSignup}}" type="text" maxlength="11" value="{{phone}}" placeholder="手机号"> </input>
+    <input class="editframe" bindinput="emailInput" hidden="{{!isSignup}}" type="text" maxlength="20" value="{{email}}" placeholder="邮箱号"> </input>
+    <input class="editframe" bindinput="nicknameInput" hidden="{{!isSignup}}" type="text" maxlength="12" value="{{nickname}}" placeholder="昵称"> </input>
+    <input class="editframe" bindinput="passwordInput" hidden="{{!isSignup}}" type="password" maxlength="12" value="{{password}}" placeholder="密码"> </input>
+    <input class="editframe" bindinput="repasswordInput" hidden="{{!isSignup}}" type="password" maxlength="12" value="{{repassword}}" placeholder="确认密码"> </input>
+  </view>
+  <view class="btnpanel">
+    <view bindtap="setBtnLoginClick" hover-class="{{btnLoginHoverStyle}}" class="{{btnLoginStyle}}">{{btnLoginText}}</view>
+    <view bindtap="setBtnSignupClick" hover-class="{{btnSignupHoverStyle}}" class="{{btnSignupStyle}}">注册</view>
+  </view>
+</view>
+<view class="foot">
+  <text>Powered by @PokerS 2019</text>
+</view>

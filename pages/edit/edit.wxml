@@ -1,0 +1,25 @@
+<!--pages/edit/edit.wxml-->
+<view class="allinput">
+  <view class="row">
+    <text>设备序号</text>
+    <input class="input" style="color: #888;" disabled="disabled" type="text" value="{{deviceId}}"></input>
+  </view>
+  <view class="row">
+    <text>设备名称</text>
+    <input auto-focus class="input" bindinput="nameInput" type="text" maxlength="12" value="{{deviceName}}" placeholder="未修改"></input>
+  </view>
+  <view class="row">
+    <text>设备类型</text>
+    <picker class="input" bindchange="bindPickerChange" value="{{deviceType}}" range="{{types}}">
+      <view style="color: #00b26a;">{{types[deviceType]}}</view>
+    </picker>
+  </view>
+  <view class="row">
+    <text>设备位置</text>
+    <input class="input" bindinput="locationInput" type="text" maxlength="12" value="{{deviceLocation}}" placeholder="未修改"></input>
+  </view>
+  <view class="tool">
+    <view class="save" hover-class="save_pressed" bindtap="save">保存修改</view>
+    <view class="destroy" hover-class="destroy_pressed" bindtap="destroy">清除设备</view>
+  </view>
+</view>

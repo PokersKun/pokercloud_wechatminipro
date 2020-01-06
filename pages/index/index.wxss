@@ -1,0 +1,156 @@
+.head {
+  padding: 0 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.nick {
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.user {
+  margin-top: 16rpx;
+  float: right;
+  width: 54rpx;
+  height: 54rpx;
+}
+.quick {
+  width: 100%;
+  height: 600rpx;
+}
+.quickcard {
+  height: 560rpx;
+  margin: 20rpx;
+  border-radius: 14rpx;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rpx 2rpx 2rpx 2rpx;
+}
+.devicepanel {
+  text-align: center;
+  height: 480rpx;
+}
+.quickicon {
+  position: absolute;
+  right: 48rpx;
+  margin-top: 32rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+.switchertoppanel {
+  width: 100%;
+  padding-top: 140rpx;
+}
+.switcherbottompanel {
+  padding-top: 30rpx;
+}
+.deviceaction {
+  transition: all 0.5s;
+  font-size: 32rpx;
+}
+.switcher {
+  transition: all 0.5s;
+  display: inline-block;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 200rpx;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rpx 2rpx 2rpx 2rpx;
+}
+.switcher_active {
+  transition: all 0.5s;
+  display: inline-block;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 200rpx;
+  background: #fff;
+  box-shadow: rgba(255, 0, 0, 0.3) 0rpx 5rpx 10rpx 10rpx;
+}
+.switcher_pressed {
+  transition: all 0.5s;
+  display: inline-block;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 200rpx;
+  background: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rpx 2rpx 2rpx 2rpx;
+}
+.switcherimage {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 40rpx;
+}
+.deviceinfo {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+}
+.devicetypeicon {
+  float: left;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.devicename {
+  float: left;
+  color: #888;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.devicelocationicon {
+  margin-top: 24rpx;
+  margin-right: 8rpx;
+  float: right;
+  width: 36rpx;
+  height: 36rpx;
+}
+.devicelocation {
+  color: #888;
+  float: right;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.tool {
+  width: 100%;
+  height: 400rpx;
+}
+.toolcard {
+  transition: all 0.5s;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: 360rpx;
+  margin: 20rpx;
+  width: 335rpx;
+  border-radius: 14rpx;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rpx 2rpx 2rpx 2rpx;
+}
+.toolcard_pressed {
+  transition: all 0.5s;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  height: 360rpx;
+  margin: 20rpx;
+  width: 335rpx;
+  border-radius: 14rpx;
+  background: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rpx 2rpx 2rpx 2rpx;
+}
+.toolcardicon {
+  width: 80rpx;
+  height: 80rpx;
+  padding-left: 125rpx;
+  margin-top: 100rpx;
+}
+.toolcardtext {
+  padding-left: 110rpx;
+  font-size: 28rpx;
+  margin-top: 28rpx;
+}
+.foot {
+  text-align: center;
+  width: 100%;
+  color: #ccc;
+  font-size: 28rpx;
+  margin: 20rpx 0;
+}

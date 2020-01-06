@@ -1,0 +1,16 @@
+<!--pages/history/history.wxml-->
+<scroll-view class="historylist" scroll-y scroll-with-animation wx:if="{{hasHistory}}">
+  <view wx:for="{{historys}}" wx:key="index" data-name="{{item.name}}" data-type="{{item.type}}" data-date="{{item.date}}" data-datatype="{{item.datatype}}" data-data="{{item.data}}" data-from="{{item.username}}" class="historyitem">
+    <image class="devicetype" src="{{item.type}}"/>
+    <view class="devicename">{{item.name}}</view>
+    <image class="dateicon" src="../../resources/images/date.png"/>
+    <view class="date">{{item.date}}</view>
+    <image class="datatype" src="{{item.datatype}}"/>
+    <view class="data">{{item.data}}</view>
+    <view class="username">{{item.username}}</view>
+  </view>
+  <view wx:if="{{hasHistory}}" class="bottomspace">
+    <text>无更多记录</text>
+  </view>
+</scroll-view>
+<view class="empty" wx:if="{{!hasHistory}}">暂无记录</view>

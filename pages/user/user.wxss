@@ -1,0 +1,80 @@
+/* pages/user/user.wxss */
+.allinput {
+  height: 500rpx;
+}
+.allinputmodify {
+  height: 600rpx;
+}
+.row {
+  height: 100rpx;
+  padding: 0 32rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 32rpx;
+}
+.row text {
+  color: #000;
+}
+.inputnormal {
+  color: #888;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: right;
+  line-height: 100rpx;
+  float: right;
+}
+.inputmodify {
+  color: #000;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: right;
+  line-height: 100rpx;
+  float: right;
+}
+.tool {
+  margin-top: 20rpx;
+}
+.modify {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #fff;
+}
+.modify_pressed {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #eee;
+}
+.logout {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  color: #f00;
+  background: #fff;
+}
+.logout_pressed {
+  transition: all 0.5s;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  color: #000;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  color: #f00;
+  background: #eee;
+}

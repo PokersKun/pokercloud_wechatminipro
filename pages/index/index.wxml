@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="head">
+  <text class="nick">{{nickname}}</text>
+  <image bindtap="setUserClick" bindtouchstart="setUserPressed" bindtouchend="setUserNormal" class="user" src="{{userImage}}"/>
+</view>
+<view class="container">
+  <view class="quick">
+    <view class="quickcard">
+      <view class="devicepanel">
+        <image wx:if="{{hasQuick}}" class="quickicon" src="../../resources/images/quick.png"/>
+        <view class="switchertoppanel">
+          <view class="{{switcherStyle}}" bindtap="setSwitcherClick" hover-class="switcher_pressed">
+            <image class="switcherimage" src="{{switcherImageUrl}}" />
+          </view>
+        </view>
+        <view class="switcherbottompanel">
+          <text class="deviceaction">{{deviceAction}}</text>
+        </view>
+      </view>
+      <view class="deviceinfo">
+        <image hidden="{{!hasQuick}}" class="devicetypeicon" src="{{deviceTypeImageUrl}}"/>
+        <text hidden="{{!hasQuick}}" class="devicename">{{deviceName}}</text>
+        <text hidden="{{!hasQuick}}" class="devicelocation">{{deviceLocation}}</text>
+        <image hidden="{{!hasQuick}}" class="devicelocationicon" src="../../resources/images/location.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="tool">
+    <view class="toolcard" hover-class="toolcard_pressed" bindtap="setDeviceListClick">
+      <image class="toolcardicon" src="../../resources/images/devices.png"/>
+      <text class="toolcardtext">设备列表</text>
+    </view>
+    <view class="toolcard" hover-class="toolcard_pressed" bindtap="setHistoryClick">
+      <image class="toolcardicon" src="../../resources/images/history.png"/>
+      <text class="toolcardtext">历史记录</text>
+    </view>
+  </view>
+</view>
+<view class="foot">
+  <text>Powered by @PokerS 2019</text>
+</view>
